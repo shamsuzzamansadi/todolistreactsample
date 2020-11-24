@@ -43,9 +43,9 @@ function TodoForm({ addTask }) {
 axios({
   method: 'get',
   headers: { 'Content-Type': 'application/json'},
-  url: 'https://localhost:3001/text'
+  url: 'http://localhost:3001/text'
 }).then(function (response) {
-  console.log(response);
+  console.log(response.data);
 });
                           
 
